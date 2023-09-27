@@ -14,9 +14,16 @@ App({
           if (res.code) {
             // 使用codeId 去后台获取 openId sessionKey
             userApi.getOpenId(res.code).then((res) => {
-              // 储存在本地
-              wx.setStorageSync("openId", res.data.openid);
-              wx.setStorageSync("session_key ", res.data.session_key);
+              if (res.code === 0) {
+                // 储存在本地
+                wx.setStorageSync("openId", res.data.openid);
+                wx.setStorageSync("session_key ", res.data.session_key);
+              } else {
+                wx.showToast({
+                  title: res.message,
+                  icon: 'none',
+                })
+              }
             })
           } else {
             console.log('登录失败！' + res.errMsg)
