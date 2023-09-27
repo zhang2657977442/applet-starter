@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "问题反馈",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "t-textarea": "tdesign-miniprogram/textarea/textarea"
+    }
+}

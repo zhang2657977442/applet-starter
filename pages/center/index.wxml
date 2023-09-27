@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="wrap">
+    <view class="userinfo">
+      <block wx:if="{{!hasUserInfo}}">
+        <image class="userinfo-avatar" src="/public/images/empty-user.jpg" mode="cover" bindtap="getUserProfile"></image>
+        <view class="userinfo-account">
+          <text class="bold-font" bindtap="getUserProfile">点击登录</text>
+        </view>
+      </block>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="userinfo-account">
+          <text class="bold-font">{{userInfo.nickName}}</text>
+          <text>账号：{{userInfo.id}}</text>
+          <text>岗位：{{userInfo.role}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <t-cell-group theme="card" class="cell-group">
+    <t-cell title="个人信息" hover arrow bindtap="toNavigate" data-value="person" />
+    <t-cell title="隐私政策" hover arrow bindtap="toNavigate" data-value="policy" />
+    <t-cell title="关于" hover arrow bindtap="toNavigate" data-value="about" />
+    <t-cell title="版本号" hover arrow bindtap="toNavigate" data-value="version" />
+    <t-cell title="问题反馈" hover arrow bindtap="toNavigate" data-value="feedback" />
+  </t-cell-group>
+  <view wx:if="{{hasUserInfo}}" class="brand-btn logout-btn" bindtap="showDialog" data-key="showConfirm">
+    退出登录
+  </view>
+  <t-dialog id="t-dialog" />
+  <t-toast id="t-toast" />
+</view>

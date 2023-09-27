@@ -1,0 +1,56 @@
+@import '/styles/variables.less';
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+
+  .wrap {
+    .userinfo {
+      height: 202rpx;
+      padding: 0 48rpx;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      color: #fff;
+      background-color: @brand-color;
+
+      .userinfo-avatar {
+        overflow: hidden;
+        width: 104rpx;
+        height: 104rpx;
+        margin-right: 38rpx;
+        border-radius: 50%;
+      }
+
+      .userinfo-account {
+        display: flex;
+        flex-direction: column;
+
+        text {
+          padding: 4rpx 0;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100rpx;
+      position: relative;
+      top: -1rpx; //　解决白线问题
+      background-color: @brand-color;
+      border-radius: 0 0 50% 50% / 200%;
+    }
+
+  }
+
+  .cell-group {
+    position: relative;
+    bottom: 80rpx;
+  }
+
+  .logout-btn {
+    margin: 10vh auto 0 auto;
+  }
+}

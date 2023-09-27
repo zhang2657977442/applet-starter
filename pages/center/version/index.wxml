@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="wrap-image">
+        <image src="/public/images/logo.png" mode="cover" />
+    </view>
+    <text>版本号 V1.0</text>
+</view>

@@ -1,0 +1,36 @@
+@import '/styles/variables.less';
+
+page {
+    background-color: #ffffff;
+    height: 50%;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .wrap-image {
+            width: 128rpx;
+            height: 128rpx;
+            padding: 10rpx;
+            border-radius: 24rpx;
+            border: 2rpx solid #E5E6EB;
+            margin-bottom: 32rpx;
+        }
+
+        image {
+            display: block;
+            width: 128rpx;
+            height: 128rpx;
+        }
+
+        text {
+            font-size: @fs-32;
+            font-weight: bold;
+            color: #B5B5B5;
+        }
+
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/center/index",
+    "pages/home/index",
+    "pages/application/index",
+    "pages/chat/index",
+    "pages/center/about/index",
+    "pages/center/person/index",
+    "pages/center/version/index",
+    "pages/center/policy/index",
+    "pages/center/feedback/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#666666",
+    "selectedColor": "#FF5F15",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/application/index",
+        "text": "页面1"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "text": "页面2"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#099DEA",
+    "navigationBarTitleText": "快速开发模板",
+    "navigationBarTextStyle": "white"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "t-dialog": "tdesign-miniprogram/dialog/dialog",
+    "t-toast": "tdesign-miniprogram/toast/toast"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

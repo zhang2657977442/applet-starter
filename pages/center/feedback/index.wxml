@@ -1,0 +1,8 @@
+<view class="container">
+    <text class="label">问题反馈</text>
+    <t-textarea class="external" placeholder="请在此输入您想反馈的内容~" bordered disableDefaultPadding="{{true}}" />
+    <view class="brand-btn submit-btn" bindtap="submit">
+        提交反馈
+    </view>
+    <t-toast id="t-toast" />
+</view>

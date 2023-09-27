@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "个人信息",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+        "t-cell": "tdesign-miniprogram/cell/cell"
+    }
+}

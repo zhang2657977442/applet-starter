@@ -1,0 +1,8 @@
+<view class="">
+    <t-cell-group theme="card">
+        <t-cell title="账号：{{userInfo.id}}" />
+        <t-cell title="用户名：{{userInfo.nickName}}" />
+        <t-cell title="岗位：{{userInfo.role}}" />
+        <t-cell title="注册时间：{{userInfo.registerDate}}" />
+    </t-cell-group>
+</view>
