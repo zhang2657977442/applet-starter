@@ -26,3 +26,22 @@
     font-size: @fs-28;
     line-height: 44rpx;
 }
+
+
+.brand-region {
+    .brand-content {
+        height: 202rpx;
+        background-color: @brand-color;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        height: 100rpx;
+        position: relative;
+        top: -1rpx; //　解决白线问题
+        background-color: @brand-color;
+        border-radius: 0 0 50% 50% / 200%;
+        z-index: -1;
+    }
+}

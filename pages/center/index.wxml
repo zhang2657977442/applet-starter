@@ -1,6 +1,6 @@
 <view class="container">
-  <view class="wrap">
-    <view class="userinfo">
+  <view class="brand-region">
+    <view class="brand-content">
       <block wx:if="{{!hasUserInfo}}">
         <image class="userinfo-avatar" src="/public/images/empty-user.jpg" mode="cover" bindtap="getUserProfile"></image>
         <view class="userinfo-account">
